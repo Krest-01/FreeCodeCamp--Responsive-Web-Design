@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>freeCodeCamp Survey Form</title>
+	<meta charset="UTF-8"/>
+	<link rel="stylesheet" href="styles.css">
+</head>
+  <body>
+				<!---class "main" contains whole form including header--->
+		<div class="main">
+					<h1 id="title">freeCodeCamp Survey Form</h1>
+					<p id="description"><em>Thank you for taking the time to help us improve the platform</em></p>
+					
+					<!---form begins--->
+			<form action="" id="survey-form">
+				   
+				<fieldset>
+					<label for="name" id="name-label"> Name<input type="text" id="name" placeholder="Enter your name" required/></label>
+
+					<label for="email" id="email-label"> Email<input type="email" id="email" placeholder="Enter your Email" required/></label>
+
+					<label for="number" id="number-label"> Age (optional)<input type="number" id="number" min="18" max="60" placeholder="Age"/></label>
+
+					<label for="myName"> Which option best descriptions your current role?
+					
+					<!---selecting role begins--->
+					  <select id="dropdown" >
+							<option >Select cuurent role</option>
+							<option>contribute a little</option>
+							<option>Not contributing at all</option>
+							<option>Main bread Winner</option>
+					  </select> </label>
+
+				  <p class="prg">Would you recommend freeCodeCamp to a friend?</p>
+				  
+					<!--- Radio bottons--->
+					 <label for="inline"> <input id="inline" name="recommend" type="radio" value="Definitely"/> Definitely</label><br>
+
+					 <label for="inline"> <input id="inline" name="recommend" type="radio" value="Maybe"/> Maybe</label><br>
+
+					 <label for="inline"> <input id="inline" name="recommend" type="radio" value="Not sure"/> Not sure</label><br><br>
+					<!---///////--->
+
+					<label for="favourite"> what is your favourite feature of freeCodeCamp?
+					  <select>
+							<option>Select an option</option>
+							<option></option>
+							<option></option>
+							<option></option>
+					  </select> 
+					</label>
+
+				  
+					<p  class="prg">what would you like to see improved? (check all that apply)</p>
+
+								<!--- checkboxes--->
+							<label for=""><input id="Front-end" type="checkbox" value="Front-end Projects"/> Front-end Projects</label><br>
+
+							<label for="Back-end"><input id="Back-end" type="checkbox" value="Back-end Projects"/> Back-end Projects</label><br>
+
+							<label for="data-viz"><input id="data-viz" type="checkbox" value="Data Visualization"/> Data Visualization</label><br>
+
+							<label for="Challenges"><input id="Challenges" type="checkbox" value="Challenges"/> Challenges</label><br>
+
+							<label for="open-source"><input id="open-source" type="checkbox" value="Open Source Community"/> Open Source Community</label><br>
+
+							<label for="Gitter"><input id="Gitter" type="checkbox" value="Gitter help rooms"/> Gitter help rooms</label><br>
+
+							<label for="videos"><input id="videos" type="checkbox" value="videos"/> videos</label><br>
+
+							<label for="Meetups"><input id="Meetups" type="checkbox" value="City Meetups"/> City Meetups</label><br>
+
+							<label for="Wiki"><input id="Wiki" type="checkbox" value="Wiki"/> Wiki</label><br>
+
+							<label for="Forum"><input id="Forum" type="checkbox" value="Forum"/> Forum</label><br>
+
+							<label for="Additional"><input id="Additional" type="checkbox" value="Additional Courses"/> Additional Courses</label><br><br>
+
+							<label for="comments"> Any comment or suggestions?<textarea id="comments" placeholder="Enter your comments here..."></textarea></label>  
+							
+							<!--- The submit botton--->
+							<input id="submit" type="submit"/>
+						  
+				</fieldset>
+
+			</form>
+		</div>
+			<!---The End--->
+  </body>
+</html>
